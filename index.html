@@ -13,41 +13,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="tailwind.config.js"></script> -->
   </head>
-  <body>
+  <body class="mx-10 my-10">
     <!-- navbar started from here -->
     <section>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 mb-5 px-5">
             <div class="navbar-start">
-              <!-- <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div> -->
+              
               <div class="nav-icon">
                 <img src="./Logo.png" alt="">
               </div>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <button class="sort-button btn text-black font-bold text-lg" id="sort-button">Short By View</button>
+              <button class="sort-button btn text-black font-bold text-sm" id="sort-button">Short By View</button>
             </div>
             <div class="navbar-end">
-              <a class="btn font-bold text-lg text-white bg-red-500">Blog</a>
+              <a class="btn font-bold text-sm text-white bg-red-500">Blog</a>
             </div>
           </div>
     </section>
     <!-- navbar finished here -->
-    
+    <hr class=" flex items-center w-auto">
+    <section>
+        <div class="tab-container w-full">
+            <div class="tabs tabs p-5 w-96 m-auto text-center flex flex-row justify-center items-center" id="tab-container">
+
+            </div>
+
+        </div>
+        <div id="card-container" class="grid lg:grid-cols-4  gap-4 ">
+            <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./Logo.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <div class="flex justify-start">
+                        <img src="./Icon.png" alt="author-pic" class="">
+                        <div>
+                            <h2 class="card-title">Tittle </h2>
+                            <div class="flex justify-center items-center gap-2">
+                                <h2 class="">Author name</h2>
+                                <img src="" alt="verified-icon">
+                            </div>
+                            <h2 class="viwes-counter">views counter</h2>
+                        </div>
+                    </div>
+                  
+                </div>
+              </div> -->
+
+        </div>
+    </section>
+
     
     <script src="js/index.js"></script>
   </body>
