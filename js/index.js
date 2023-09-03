@@ -30,20 +30,20 @@ const handleLoadVideos = async (categoryId) => {
         console.log(videos);
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card  bg-base-100 shadow-xl">
         <figure><img src="${videos.thumbnail
-        }" alt="Shoes" /></figure>
+        }" alt="thumbnail" class=" h-40 w-72" /></figure>
         <div class="card-body">
-            <div class="flex justify-start">
+            <div class="flex justify-items-start items-start">
                 <img src="${videos.authors[0]?.profile_picture
-                }" alt="author-pic" class="">
+                }" alt="author-pic" class="w-9 h-9 rounded-full">
                 <div>
                     <h2 class="card-title">${videos.title}</h2>
                     <div class="flex justify-center items-center gap-2">
                         <h2 class="">${videos.authors[0]?.profile_name}</h2>
-                        <img src="" alt="verified-icon">
+                        <img src="${videos.authors[0]?.verified ? './fi_10629607.svg' : 'Verified Hidden'}" class="inline-block w-4 h-4" alt="Verified">
                     </div>
-                    <h2 class="views-counter"><span>${videos.others.views}</span> views</h2>
+                    <h2 class="views-counter"><span id="views-counter">${videos.others.views}</span> views</h2>
                 </div>
             </div>
           
