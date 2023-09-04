@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important blog </title>
+    <!-- tailwind and daisy ui setup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-10 my-10 bg-gray-100">
+    <!-- navbar started from here -->
+    <section>
+        <div class="navbar bg-base-100 mb-5 px-5 flex justify-between items-center">
+            <div class="navbar-start">
+              
+              <div class="nav-icon">
+                <img src="./Logo.png" alt="">
+              </div>
+            </div>
+            <div class=""><h3 class="text-center text-2xl text-black font-semibold">Important blogs about PHero Tube</h3></div>
+            <div class="navbar-end">
+              <a href="index.html" class="btn font-bold text-sm text-white bg-red-500 " id="home-btn">Home</a>
+            </div>
+          </div>
+    </section>
+    <hr class=" flex items-center w-auto">
+
+    <!-- blog section started here  -->
+    
+    <section>
+        <div class="blog-container rounded-lg">
+
+    <header class="bg-blue-500 text-white py-4 rounded-lg">
+        <div class="container mx-auto">
+            <h1 class="text-4xl text-center font-bold rounded-md">Welcome to the Blog and Q&A Page</h1>
+        </div>
+    </header>
+
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-semibold rounded-md">Latest Blogs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-xl font-semibold">About PHero Tube</h3>
+                <p class="mt-2">This is the content of the first blog post. PHero is the one of the biggest platform of entertainment and learning</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <h3 class="text-xl font-semibold">Support PHero Tube</h3>
+                <p class="mt-2">PHero is the one of the biggest platform of entertainment and learning. So we committed for all kind of support.</p>
+            </div>
+            <!-- Add more blog articles as needed -->
+        </div>
+    </section>
+
+    <section class="container mx-auto my-8">
+        <h2 class="text-2xl font-semibold">Q&A Section</h2>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 1</h3>
+            <p class="mt-2">What is <span class="text-blue-600 font-medium capitalize">VAR </span>in javascript ?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">`var` is a variable declaration keyword in JavaScript, but it has several limitations and quirks. One significant drawback is its lack of block scope; `var` variables are function-scoped or, if declared globally, accessible throughout the entire program. This can lead to unexpected behavior and bugs. Additionally, `var` variables are hoisted, meaning they are moved to the top of their scope during execution, potentially causing confusion. Furthermore, `var` allows redeclaration within the same scope, making it easy to inadvertently overwrite variables. Due to these issues and the introduction of `let` and `const` in ES6, `var` is now largely considered outdated. Modern JavaScript development favors `let` for variable reassignment and `const` for variables that should remain constant. These alternatives offer better scoping control and reduce the risk of unintended side effects.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 2</h3>
+            <p class="mt-2">What is <span class="text-blue-600 font-medium capitalize">LET </span>in javascript ?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">`let` is a variable declaration keyword introduced in ECMAScript 6 (ES6) that offers improved scoping and variable control compared to `var`. Variables declared with `let` are block-scoped, meaning they are confined to the nearest enclosing block (usually denoted by curly braces), function, or global scope. This prevents unintended variable access and reduces bugs.
+
+                    `let` variables are also not hoisted to the top of their scope, so they are only accessible after their declaration. This behavior enhances code readability and predictability.
+                    
+                    Unlike `const`, `let` allows variables to be reassigned, making it suitable for cases where variable values need to change. It's commonly used for loop counters and variables that change within a block.
+                    
+                    In summary, `let` is a modern JavaScript feature that provides better scoping control and variable management, enhancing code quality and reducing the risk of bugs compared to the older `var`. It's a recommended choice for most variable declarations in ES6 and later.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 3</h3>
+            <p class="mt-2">What is <span class="text-blue-600 font-medium capitalize">CONST </span>in javascript ?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">`const` is a variable declaration keyword in JavaScript introduced with ECMAScript 6 (ES6) that creates constants, or variables that cannot be reassigned after their initial assignment. It's ideal for defining values that should remain unchanged throughout the program's execution, enhancing code reliability and maintainability.
+
+                    Variables declared with `const` are block-scoped like `let`, providing a clear and predictable scope for the variable. While `const` prevents reassignment, it does not make objects or arrays immutable. You can modify the properties of objects and elements of arrays declared with `const`, but you can't reassign the variable itself.
+                    
+                    The use of `const` is encouraged when you want to ensure that a variable's value remains constant, improving code readability and signaling your intent to other developers. However, it's essential to choose `let` or `var` when variable reassignment is necessary.
+                    
+                    In summary, `const` is a valuable tool for creating immutable variables and should be used for values that should not change throughout the program's execution.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 4</h3>
+            <p class="mt-2">When <span class="text-blue-600 font-medium capitalize">NULL </span>used in javascript ?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">In JavaScript, `null` is a primitive value that represents the intentional absence of any object value or the absence of a value itself. It is often used when you want to explicitly indicate that a variable or object property does not point to any valid object or value. For example, you might assign `null` to a variable or property to clear its value, indicating that it should not reference any object.
+
+                    Common use cases for `null` include initializing variables before assigning them meaningful values, releasing resources held by objects when they are no longer needed, or checking if a variable has been intentionally left without a value. However, it's important to distinguish between `null` and `undefined`, as they are used differently in JavaScript.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 5</h3>
+            <p class="mt-2">When <span class="text-blue-600 font-medium capitalize">UNDEFINED </span>used in javascript ?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">In JavaScript, `undefined` is a primitive data type and a predefined global variable. It represents the absence of a value or the uninitialized state of a variable. 
+
+                    `undefined` is typically encountered in several scenarios:
+                    1. When a variable is declared but not assigned a value, it is automatically initialized to `undefined`.
+                    
+                    2. When a function doesn't return a value explicitly, it returns `undefined` by default.
+                    
+                  3. When an object property is accessed with a non-existent key, it returns `undefined`.
+                  Understanding `undefined` is crucial for error handling and debugging in JavaScript, as it often indicates issues with variable initialization or object property access.</p>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+            <h3 class="text-xl font-semibold">Question 6</h3>
+            <p class="mt-2">What do you mean by <span class="text-blue-600 font-medium capitalize">REST API </span>?</p>
+            <div class="bg-gray-100 p-2 mt-2">
+                <p class="text-gray-600">REST API, which stands for Representational State Transfer Application Programming Interface, is a standardized architectural style for designing networked applications. It uses a set of constraints and principles to create scalable, stateless, and interoperable web services. RESTful APIs are built on top of the HTTP protocol and rely on HTTP methods like GET, POST, PUT, and DELETE to perform CRUD (Create, Read, Update, Delete) operations on resources, which are represented as URLs.
+
+                    REST APIs emphasize simplicity, scalability, and a stateless client-server interaction model. They are widely used for building web services that can be accessed by various clients, including web browsers, mobile apps, and other software applications. REST's statelessness and uniform interface make it a popular choice for building distributed and reliable systems on the web.</p>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <footer class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 PHero Tube</p>
+        </div>
+    </footer>
+
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>

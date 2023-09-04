@@ -58,16 +58,21 @@ const handleLoadVideos = async (categoryId) => {
 
 
 
-// const displayData = displayMainData => {
-//     // console.log(displayMainData);
-//     displayMainData.forEach(videos => {
-//         // console.log(videos);
-//     });
-// }
+// blog button function 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const blogButton = document.getElementById("blog-btn");
+
+    blogButton.addEventListener("click", function () {
+        window.location.href = "blog.html";
+    });
+});
+
 
 
 
 
 
 handleCategory();
-// displayData()
+
